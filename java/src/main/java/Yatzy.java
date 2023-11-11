@@ -1,5 +1,8 @@
+import java.util.Arrays;
+
 public class Yatzy {
 
+/*
     public static int chance(int d1, int d2, int d3, int d4, int d5)
     {
         int total = 0;
@@ -22,6 +25,38 @@ public class Yatzy {
         return 0;
     }
 
+ */
+
+
+    public static int chance(int... dice) {
+        return Arrays.stream(dice).sum();
+    }
+
+    public static int yatzy(int... dice) {
+        int[] counts = new int[6];
+        for (int die : dice) {
+            counts[die - 1]++;
+        }
+        return Arrays.stream(counts).anyMatch(count -> count == 5) ? 50 : 0;
+    }
+
+    private static int countOccurrences(int number, int... dice) {
+        return (int) Arrays.stream(dice).filter(die -> die == number).count();
+    }
+
+
+    public static int ones(int... dice) {
+        return countOccurrences(1, dice);
+    }
+
+    public static int twos(int... dice) {
+        return countOccurrences(2, dice) * 2;
+    }
+
+    public static int threes(int... dice) {
+        return countOccurrences(3, dice) * 3;
+    }
+/*
     public static int ones(int d1, int d2, int d3, int d4, int d5) {
         int sum = 0;
         if (d1 == 1) sum++;
@@ -55,6 +90,8 @@ public class Yatzy {
         return s;
     }
 
+
+ */
     protected int[] dice;
     public Yatzy(int d1, int d2, int d3, int d4, int _5)
     {
