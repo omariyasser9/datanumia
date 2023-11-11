@@ -1,10 +1,12 @@
 import java.util.Arrays;
+
 import java.util.stream.IntStream;
 
 public class Yatzy {
 
     public static int chance(int... dice) {
         return Arrays.stream(dice).sum();
+
     }
 
     public static int yatzy(int... dice) {
@@ -14,6 +16,7 @@ public class Yatzy {
         }
         return IntStream.of(counts).anyMatch(count -> count == 5) ? 50 : 0;
     }
+
 
     public static int ones(int... dice) {
         return countSpecificNumber(dice, 1);
