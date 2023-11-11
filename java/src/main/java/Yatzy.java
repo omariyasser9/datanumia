@@ -92,6 +92,30 @@ public class Yatzy {
 
 
  */
+
+    public static int smallStraight(int... dice) {
+        long distinctCount = Arrays.stream(dice).distinct().count();
+        return (distinctCount == 5 && Arrays.stream(dice).max().getAsInt() - Arrays.stream(dice).min().getAsInt() == 4) ? 15 : 0;
+    }
+
+    public static int largeStraight(int... dice) {
+        long distinctCount = Arrays.stream(dice).distinct().count();
+        return (distinctCount == 5 && Arrays.stream(dice).max().getAsInt() - Arrays.stream(dice).min().getAsInt() == 4) ? 20 : 0;
+    }
+
+    public static int fullHouse(int... dice) {
+        int[] counts = new int[6];
+        for (int die : dice) {
+            counts[die - 1]++;
+        }
+        boolean hasTwo = Arrays.stream(counts).anyMatch(count -> count == 2);
+        boolean hasThree = Arrays.stream(counts).anyMatch(count -> count == 3);
+        return (hasTwo && hasThree) ? Arrays.stream(dice).sum() : 0;
+    }
+
+    /*
+
+
     protected int[] dice;
     public Yatzy(int d1, int d2, int d3, int d4, int _5)
     {
@@ -272,6 +296,8 @@ public class Yatzy {
         else
             return 0;
     }
+
+     */
 }
 
 
