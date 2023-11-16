@@ -1,4 +1,4 @@
-package com.refactoring.kata.model;
+package kata.model;
 
 public interface Category {
 	int getScore(DiceRoll diceRoll);

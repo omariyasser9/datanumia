@@ -1,4 +1,4 @@
-package com.kata.yatzy;
+package kata.yatzy;
 
 import static java.util.stream.Collectors.reducing;
 

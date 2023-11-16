@@ -1,4 +1,4 @@
-package com.kata.model;
+package kata.model;
 
 public class PairCategory implements Category {
 

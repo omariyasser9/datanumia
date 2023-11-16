@@ -1,4 +1,6 @@
-package com.kata.model;
+package kata.model;
+
+import kata.model.DiceRoll;
 
 public class ChanceCategory implements Category {
 

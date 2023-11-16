@@ -1,4 +1,4 @@
-package com.kata.model;
+package kata.model;
 
 public enum CategoryEnum {
 	CHANCE, YATZY, ONES, TWOS, THREES, FOURS, FIVES, SIXES, PAIR, TWO_PAIRS, THREE_OF_KIND, FOUR_OF_KIND,

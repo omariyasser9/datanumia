@@ -1,4 +1,4 @@
-package com.kata.model;
+package kata.model;
 
 import java.util.Comparator;
 import java.util.List;
