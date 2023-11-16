@@ -4,9 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 
+import kata.service.CalculateScoreService;
+import kata.service.CalculateScoreServiceImpl;
 import org.junit.jupiter.api.Test;
 
-import com.refactoring.kata.model.CategoryEnum;
+import kata.model.CategoryEnum;
 
 public class YatzyTest {
 

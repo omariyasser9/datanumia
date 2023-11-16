@@ -1,19 +1,19 @@
-package com.kata.service;
+package kata.service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.refactoring.kata.model.Category;
-import com.refactoring.kata.model.CategoryEnum;
-import com.refactoring.kata.model.ChanceCategory;
-import com.refactoring.kata.model.FullHouseCategory;
-import com.refactoring.kata.model.LargeStraightCategory;
-import com.refactoring.kata.model.NumberOfAKind;
-import com.refactoring.kata.model.PairCategory;
-import com.refactoring.kata.model.SmallStraightCategory;
-import com.refactoring.kata.model.SumByValueCategory;
-import com.refactoring.kata.model.TwosPairsCategory;
-import com.refactoring.kata.model.YatzyCategory;
+import kata.model.Category;
+import kata.model.CategoryEnum;
+import kata.model.ChanceCategory;
+import kata.model.FullHouseCategory;
+import kata.model.LargeStraightCategory;
+import kata.model.NumberOfAKind;
+import kata.model.PairCategory;
+import kata.model.SmallStraightCategory;
+import kata.model.SumByValueCategory;
+import kata.model.TwosPairsCategory;
+import kata.model.YatzyCategory;
 
 public class FactoryCategories {
 

@@ -1,11 +1,11 @@
-package com.kata.service;
+package kata.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.refactoring.kata.model.Category;
-import com.refactoring.kata.model.CategoryEnum;
-import com.refactoring.kata.model.DiceRoll;
+import kata.model.Category;
+import kata.model.CategoryEnum;
+import kata.model.DiceRoll;
 
 public class CalculateScoreServiceImpl implements CalculateScoreService {
 

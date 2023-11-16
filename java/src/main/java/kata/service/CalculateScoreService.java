@@ -1,8 +1,8 @@
-package com.kata.service;
+package kata.service;
 
 import java.util.List;
 
-import com.refactoring.kata.model.CategoryEnum;
+import kata.model.CategoryEnum;
 
 public interface CalculateScoreService {
 
