@@ -10,10 +10,6 @@ import kata.service.CalculateScoreServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import kata.model.CategoryEnum;
-=======
-import org.junit.*;
-import static org.junit.Assert.*;
->>>>>>> parent of d8e1920 ((no branch):)
 
 public class YatzyTest {
 
